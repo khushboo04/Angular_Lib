@@ -1,2 +1,11 @@
 <enl-example-ng-lib></enl-example-ng-lib>
-<enl-option></enl-option>
+<br>
+
+<div class="flex-container">
+    <enl-option [data]="data" (formData)='displayFormData($event)' 
+    (filteredValues)='displaySelectionData($event)'></enl-option>
+
+    <div class="content-data">
+        <app-main-content *ngIf="selectionData" [selectionData]="selectionData"></app-main-content>
+    </div>
+</div>

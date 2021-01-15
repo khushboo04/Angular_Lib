@@ -1,0 +1,77 @@
+ {
+     "data": [
+          {
+        "name": "Carrier Compatibility",
+        "priority": 1,
+        "value": "Carrier_Compatibility",
+        "filters": [{
+            "controlType": null,
+            "level": 2,
+            "name": "CDMA Unlocked",
+            "priority": 1,
+            "value": "CDMA_Unlocked"
+            }, {
+            "controlType": null,
+            "level": 2,
+            "name": "GSM Unlocked",
+            "priority": 1,
+            "value": "GSM_Unlocked"
+        }, {
+            "controlType": null,
+            "level": 2,
+            "name": "Page Plus",
+            "priority": 1,
+            "value": "Page_Plus"
+        }, {
+            "controlType": null,
+            "level": 2,
+            "name": "Total Wireless",
+            "priority": 1,
+            "value": "Total_Wireless"
+        }, {
+            "controlType": null,
+            "level": 2,
+            "name": "Net 10",
+            "priority": 1,
+            "value": "Net_10"
+        }]
+    },
+    {
+        "name": "Brand",
+        "priority": 2,
+        "value": "Brand",
+        "filters": [{
+            "controlType": null,
+            "level": 2,
+            "name": "Alcatel",
+            "priority": 1,
+            "value": "Alcatel"
+            }, {
+            "controlType": null,
+            "level": 2,
+            "name": "Apple",
+            "priority": 1,
+            "value": "Apple"
+        }, {
+            "controlType": null,
+            "level": 2,
+            "name": "BLU",
+            "priority": 1,
+            "value": "BLU"
+        }, {
+            "controlType": null,
+            "level": 2,
+            "name": "Coolpad",
+            "priority": 1,
+            "value": "Coolpad"
+        }, {
+            "controlType": null,
+            "level": 2,
+            "name": "LG",
+            "priority": 1,
+            "value": "LG"
+        }]
+    }
+     ]
+}
+

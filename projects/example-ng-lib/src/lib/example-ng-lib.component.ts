@@ -3,17 +3,13 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'enl-example-ng-lib',
   template: `
-    <p>
-      example-ng-lib works!
-      {{ title }}
-    </p>
+    <h1>
+      Welcome to Angular library
+    </h1>
   `,
-  styles: [
-  ]
+  styles: ['h1 { font-weight: normal; text-align: center }']
 })
 export class ExampleNgLibComponent implements OnInit {
-
-  @Input() title;
 
   constructor() { }
 

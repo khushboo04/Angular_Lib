@@ -1,1 +1,23 @@
-<p>option works!</p>
+<!-- <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+    <input formControlName="name" placeholder="Your name">
+    <input formControlName="email" placeholder="Your email">
+    <input formControlName="message" placeholder="Your message">
+  
+    <button type="submit">Send</button>
+  </form> -->
+
+
+  <section class="example-section" *ngFor="let d of data">
+    <span class="example-list-section">
+        <span>
+            {{d.name}}
+        </span>
+      <ul>
+        <li class="flex-container" *ngFor="let subtask of d.filters">
+          <mat-checkbox [(ngModel)]="subtask.completed" (ngModelChange)="updateAllComplete()">
+            {{subtask.name}}
+          </mat-checkbox>
+        </li>
+      </ul>
+    </span>
+</section>

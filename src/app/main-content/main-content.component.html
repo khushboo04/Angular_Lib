@@ -1,0 +1,10 @@
+<div *ngIf="selectionData">
+    <div *ngFor="let sd of selectionData">
+        <div *ngFor="let f of sd.filters">
+            <div class="parent" *ngIf="f.completed">
+                <mat-card class="child">{{ sd.name }} - {{ f.name }} is selected</mat-card>                
+            </div>
+        </div>
+    </div>
+</div>
+

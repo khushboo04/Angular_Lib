@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
       Welcome to Angular library
     </h1>
   `,
-  styles: ['h1 { font-weight: normal; text-align: center }']
+  styles: ['h1 { font-weight: normal; text-align: center; color: #495057 }']
 })
 export class ExampleNgLibComponent implements OnInit {
 

@@ -1,0 +1,28 @@
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li [ngbNavItem]="1">
+      <a ngbNavLink>Products</a>
+      <ng-template ngbNavContent>
+        <div class="flex-container">
+            <enl-option [data]="data"
+            (filteredValues)='displaySelectionData($event)'></enl-option>
+        
+            <div class="content-data">
+                <app-main-content *ngIf="selectionData" [selectionData]="selectionData"></app-main-content>
+            </div>
+        </div>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <a ngbNavLink>Form</a>
+      <ng-template ngbNavContent>
+       <enl-query-form (formData)='displayFormData($event)' ></enl-query-form>
+       <br>
+        <div *ngIf="formData">
+          {{ formData.name }}'s message has been sent! Thank you!
+        </div>
+      </ng-template>
+    </li>
+  </ul>
+  
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+  

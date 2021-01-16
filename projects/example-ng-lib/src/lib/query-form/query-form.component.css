@@ -1,0 +1,11 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item {
+    flex-shrink: 3;
+    margin: 10px;
+    width: 300px
+}
+

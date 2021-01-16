@@ -1,0 +1,7 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)" class="form-container">
+    <input class="form-item" formControlName="name" placeholder="Your name">
+    <input class="form-item" formControlName="email" placeholder="Your email">
+    <input class="form-item" formControlName="message" placeholder="Your message">
+  
+    <button class="form-item btn-warning" type="submit">Send</button>
+</form>
